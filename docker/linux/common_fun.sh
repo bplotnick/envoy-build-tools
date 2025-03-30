@@ -2,7 +2,7 @@
 
 set -o pipefail
 
-ARCH="$(uname -m)"
+ARCH="${ARCH:-$(uname -m)}"
 
 DEB_ARCH=amd64
 case $ARCH in
